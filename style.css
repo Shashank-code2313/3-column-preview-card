@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%); 
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite : hsla(0, 0%, 100%, 0.75);/*(paragraphs)*/
+    --Verylightgray: hsl(0, 0%, 95%);/* (background, headings, buttons)*/
+}  
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Verylightgray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    max-width: 920px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 34px;
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 30px 0;
+    color: var(--Verylightgray);
+}
+
+.content{
+    text-align: left;
+    line-height: 24px;
+    padding-bottom: 90px;
+    color: var(--Transparentwhite);
+}
+
+.btn{
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 15px 38px;
+    border: 2px solid var(--Verylightgray);
+    border-radius: 25px;
+    background-color: var(--Verylightgray);
+}
+
+.card{
+    padding: 45px;
+}
+
+.card-sedans{
+    background-color: var(--Brightorange);
+    border-radius: 10px 0 0 10px;
+}
+
+.card-suvs{
+    background-color: var(--Darkcyan);
+}
+
+.card-luxury{
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.sedans-btn{
+    color: var(--Brightorange);
+}
+
+.suvs-btn{
+    color: var(--Darkcyan);
+}
+
+.luxury-btn{
+    color: var(--Verydarkcyan);
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width : 375px){
+    body{
+        padding: 88px 24px;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .card-sedans{
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .card-luxury{
+        border-radius: 0 0 10px 10px;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .heading{
+        padding: 40px 0 32px 0;
+    }
+
+    .content{
+        padding-bottom: 26px;
+    }
+
+}
