@@ -124,3 +124,32 @@ body{
     }
 
 }
+
+@media (max-width : 768px){
+    body{
+        padding: 44px 24px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .card-sedans{
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .card-luxury{
+        border-radius: 0 0 10px 10px;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .heading{
+        padding: 40px 0 32px 0;
+    }
+
+    .content{
+        padding-bottom: 26px;
+    }
+}
